@@ -36,7 +36,9 @@ for (let i = 0; i < 9; i++) {
 
                 if (checkWin()) {
                     gameEnded = true;
-                   alert( playerName = playerSymbol===player1Symbol?player1Name:player2Name + " wins!");
+                    playerName = playerSymbol===player1Symbol?player1Name:player2Name;
+
+                   alert( playerName + " wins!");
                    
                 }
 
@@ -62,6 +64,8 @@ function reset(){
   player1Symbol=user.symbol1;
   player2Name=user.name2;
   player2Symbol=user.symbol2;
+  playerName = player1Name
+  playerSymbol = player1Symbol;
  
    
     gameEnded = false;
